@@ -4,17 +4,17 @@
 
 @font-face {
   font-family: 'IRANSans-bold';
-  src: url("/font/IRANSans(FaNum)_Bold.ttf");
+  src: url("https://github.com/MohamadNematizadeh/Websit_Shop/raw/refs/heads/main/public/font/IRANSans(FaNum)_Bold.ttf");
 }
 
 @font-face {
   font-family: 'IRANSans-UltraLight';
-  src: url("/font/IRANSans(FaNum)_UltraLight.ttf");
+  src: url("https://github.com/MohamadNematizadeh/Websit_Shop/raw/refs/heads/main/public/font/IRANSans(FaNum)_UltraLight.ttf");
 }
 
 @font-face {
   font-family: 'IRANSans-Medium';
-  src: url("/font/IRANSans(FaNum)_Medium.ttf");
+  src: url("https://github.com/MohamadNematizadeh/Websit_Shop/raw/refs/heads/main/public/font/IRANSans(FaNum)_Medium.ttf");
 }
 
 .font-iransans {
