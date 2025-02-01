@@ -1,8 +1,14 @@
-"use client";
-
 import { useState } from "react";
 
-export default function AddProductForm({ onAdd }: { onAdd: (newProduct: any) => void }) {
+interface Product {
+  id: number;
+  name: string;
+  price: number;
+  category: string;
+  image?: string;
+}
+
+export default function AddProductForm({ onAdd }: { onAdd: (newProduct: Product) => void }) {
   const [name, setName] = useState("");
   const [price, setPrice] = useState<number | "">("");
   const [category, setCategory] = useState("");
@@ -19,7 +25,7 @@ export default function AddProductForm({ onAdd }: { onAdd: (newProduct: any) => 
       if (!response.ok) {
         throw new Error("Failed to add product");
       }
-      const newProduct = await response.json();
+      const newProduct: Product = await response.json();
       onAdd(newProduct);
       setName("");
       setPrice("");
