@@ -20,7 +20,7 @@ export default function Home() {
 
   const fetchProducts = async () => {
     try {
-      const response = await fetch("http://127.0.0.1:8000/api/products");
+      const response = await fetch("https://backend-api.liara.run/api/products");
       if (!response.ok) {
         throw new Error("Failed to fetch products");
       }
@@ -33,7 +33,7 @@ export default function Home() {
 
   const handleDelete = async (id: number) => {
     try {
-      const response = await fetch(`http://127.0.0.1:8000/api/products/${id}`, {
+      const response = await fetch(`https://backend-api.liara.run/api/products/${id}`, {
         method: "DELETE",
       });
 
