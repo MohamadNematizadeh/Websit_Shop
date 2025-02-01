@@ -1,0 +1,165 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@font-face {
+  font-family: 'IRANSans-bold';
+  src: url("/font/IRANSans(FaNum)_Bold.ttf");
+}
+
+@font-face {
+  font-family: 'IRANSans-UltraLight';
+  src: url("/font/IRANSans(FaNum)_UltraLight.ttf");
+}
+
+@font-face {
+  font-family: 'IRANSans-Medium';
+  src: url("/font/IRANSans(FaNum)_Medium.ttf");
+}
+
+.font-iransans {
+  font-family: 'IRANSans-bold';
+}
+
+.font-iransans-me {
+  font-family: 'IRANSans-Medium';
+}
+
+@keyframes slideIn {
+  from {
+    transform: translateY(20px);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+.animate-slideIn {
+  animation: slideIn 1s ease-out;
+}
+
+header {
+  font-family: 'IRANSans-bold';
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 50;
+  background-color: rgba(0, 0, 0, 0.6);
+}
+
+.gradient-text {
+  background: linear-gradient(45deg, #FF6F00, #FF4500);
+  -webkit-background-clip: text;
+  color: transparent;
+}
+
+.hover\:scale-110:hover {
+  transform: scale(1.1);
+}
+
+.btn {
+  background-color: #FF6F00;
+  color: white;
+  padding: 12px 24px;
+  border-radius: 30px;
+  font-weight: 600;
+  transition: background-color 0.3s, transform 0.3s;
+}
+
+.btn:hover {
+  background-color: #FF4500;
+  transform: scale(1.05);
+}
+
+.category-box {
+  background-color: rgba(0, 0, 0, 0.6);
+  color: white;
+  padding: 12px 20px;
+  border-radius: 12px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.5);
+  font-size: 18px;
+  margin: 10px;
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.category-box i {
+  margin-left: 8px;
+}
+
+.category-box:hover {
+  transform: scale(1.05);
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.7);
+}
+
+.category-container {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+.main-text-box {
+  position: absolute;
+  width: 990px;
+  height: 190px;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: rgba(0, 0, 0, 0.6);
+  padding: 40px;
+  border-radius: 12px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.9);
+  text-align: center;
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px); /* Fallback for Safari */
+}
+
+.main-text-box h1 {
+  font-weight: 900;
+  font-size: 74px;
+  color: white;
+}
+
+.main-text-box h1 .highlight {
+  color: #FF6F00;
+  background: linear-gradient(45deg, #FF6F00, #FF4500);
+  -webkit-background-clip: text;
+  color: transparent;
+}
+
+.highlight_1 {
+  font-size: 24px;
+  color: #FF6F00;
+  background: linear-gradient(45deg, #FF6F00, #FF4500);
+  -webkit-background-clip: text;
+  color: transparent;
+}
+
+.category-section {
+  position: absolute;
+  top: 77%;
+  left: 50%;
+  transform: translateX(-50%);
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+  z-index: 10;
+}
+
+.custom-text-before {
+  content: 'BAKHOSHKBAR';
+  position: absolute;
+  top: -1px;
+  left: 50%;
+  transform: translateX(-50%);
+  font-size: 90px;
+  letter-spacing: 15px;
+  color: rgba(255, 255, 255, 0.1);
+  font-weight: bold;
+  text-transform: uppercase;
+}
