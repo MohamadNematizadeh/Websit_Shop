@@ -61,7 +61,7 @@ export default function Home() {
       <Header />
       <section className="relative mt-20">
         <Image
-          src="public/image/2148431062-min.jpg"
+          src="https://github.com/MohamadNematizadeh/Websit_Shop/blob/7d3a19fcff036cbc7c2a3cdc2baee019ccdb3a73/public/image/2148431062-min.jpg"
           alt="background"
           className="w-full h-96 object-cover opacity-80"
           width={1920}
