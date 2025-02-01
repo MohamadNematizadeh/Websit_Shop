@@ -127,6 +127,7 @@ header {
 
 .main-text-box h1 .highlight {
   color: #FF6F00;
+  font-family: 'IRANSans-bold';
   background: linear-gradient(45deg, #FF6F00, #FF4500);
   -webkit-background-clip: text;
   color: transparent;
@@ -134,6 +135,7 @@ header {
 
 .highlight_1 {
   font-size: 24px;
+  font-family: 'IRANSans-bold';
   color: #FF6F00;
   background: linear-gradient(45deg, #FF6F00, #FF4500);
   -webkit-background-clip: text;
