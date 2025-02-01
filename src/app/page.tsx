@@ -5,7 +5,7 @@ import Header from "./components/Header";
 import Footer from "./components/Footer";
 import AddProductForm from "./components/ProductForm";
 import ProductList from "./components/ProductList";
-import Image from "next/image";
+import Image from 'next/image';
 
 interface Product {
   id: number;
@@ -71,15 +71,15 @@ export default function Home() {
 
         <div className="category-section font-iransans">
           <div className="category-box flex flex-col items-center space-y-2 bg-gray-30 p-4 rounded-lg">
-            <img src="public\image\آیکن-بادام-زمینی111-copy.png" alt="آیکن بادام زمینی" className="w-8 h-8" />
+            <Image src="public\image\آیکن-بادام-زمینی111-copy.png" alt="آیکن بادام زمینی" className="w-8 h-8" />
             <span className="text-lg font-semibold">آجیل</span>
           </div>
           <div className="category-box flex flex-col items-center space-y-4 bg-gray-40 p-4 rounded-lg">
-            <img src="public\image\آیکن-مویز2-copy.png" alt="آیکن بادام زمینی" className="w-8 h-8" />
+            <Image src="public\image\آیکن-مویز2-copy.png" alt="آیکن بادام زمینی" className="w-8 h-8" />
             <span className="text-lg font-semibold">خشکبار</span>
           </div>
           <div className="category-box flex flex-col items-center space-y-2 bg-gray-30 p-4 rounded-lg">
-            <img src="public\image\آیکن-بادام-درختی2-1.png" alt="آیکن بادام زمینی" className="w-8 h-8" />
+            <Image src="public\image\آیکن-بادام-درختی2-1.png" alt="آیکن بادام زمینی" className="w-8 h-8" />
             <span className="text-lg font-semibold">بادام</span>
           </div>
           <div className="category-box flex flex-col items-center space-y-2 bg-gray-30 p-4 rounded-lg">
