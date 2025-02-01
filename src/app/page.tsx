@@ -30,7 +30,7 @@ export default function Home() {
       console.error("Error fetching products:", error);
     }
   };
-
+// 
   const handleDelete = async (id: number) => {
     try {
       const response = await fetch(`https://backend-api.liara.run/api/products/${id}`, {
