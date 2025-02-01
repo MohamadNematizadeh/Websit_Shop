@@ -1,4 +1,5 @@
 import React from "react";
+import Image from "next/image";
 
 interface Product {
   id: number;
@@ -17,7 +18,9 @@ const ProductList: React.FC<ProductListProps> = ({ products, onDelete }) => {
   return (
     <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 p-6">
       {products.length === 0 ? (
-        <p className="text-center col-span-3 text-xl font-semibold text-gray-600">هیچ محصولی یافت نشد.</p>
+        <p className="text-center col-span-3 text-xl font-semibold text-gray-600">
+          هیچ محصولی یافت نشد.
+        </p>
       ) : (
         products.map((product) => (
           <div
@@ -25,10 +28,12 @@ const ProductList: React.FC<ProductListProps> = ({ products, onDelete }) => {
             className="bg-white p-6 shadow-lg rounded-lg transform transition-all hover:scale-105 hover:shadow-xl"
           >
             {product.image && (
-              <img
+              <Image
                 src={product.image}
                 alt={product.name}
                 className="w-full h-60 object-cover rounded-lg mb-4"
+                width={500}
+                height={300}
               />
             )}
             <h3 className="text-xl font-semibold text-gray-800 mb-2">{product.name}</h3>
